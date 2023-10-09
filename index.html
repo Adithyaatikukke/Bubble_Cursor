@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Cursor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <div id="bubbles"></div> <div id="bubbles2"></div> <div id="bubbles3"></div>
+
+
+
+      <!--Social Liks codings below-->
+      <a id="source-link" class="meta-link" href="https://github.com/Adithyaatikukke" target="_blank">
+        <i class="fas fa-link"></i>
+        <span class="roboto-mono">Join my Github</span>
+    </a>
+
+    <a id="yt-link" class="meta-link" href="https://instagram.com/paaaaandaaa__?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
+      <i class="fab fa-youtube"></i>
+      <span>Follow me❤</span>
+    </a>
+
+
+    <script>
+        let bubleArr = []; document.addEventListener("mousemove", (e) => { let bubles = document.createElement("bubles"); let x = e.pageX; let y = e.pageY; let size = Math.random() * 60; bubles.style.width = 1 + size + "px"; bubles.style.height = 1 + size + "px"; bubles.style.left = x - size / 2 + "px"; bubles.style.top = y - size / 2 + "px"; document.body.appendChild(bubles); setTimeout(function () { bubles.remove(); console.log("tu sam"); }, 5000); }); 
+    </script>
+</body>
+</html>
